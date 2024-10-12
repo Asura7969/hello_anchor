@@ -5,13 +5,16 @@ resolution = true
 skip-lint = false
 
 [programs.devnet]
+cash-app = "Ekis1DgPsw7wAkWF9x28ziUeZp6vjhEQ9J4ikdMNJEWZ"
 game = "CHZxZuE6fdPQAywgCRVp1wSJZbrqBczvo7VjFMCkkL4y"
 hello_anchor = "2RgBM5i2YBy6kSZB6vtwbPdk7QzRCyim6QqsFdc7cRsc"
+journal = "BNrXDLHnCC5aPZNoZvXi2JkbtejhvaCLQdJ4ddSNLBpw"
 
 [programs.localnet]
 cash-app = "Ekis1DgPsw7wAkWF9x28ziUeZp6vjhEQ9J4ikdMNJEWZ"
-game = "7xpDxfrSrqREcPeFTnSUjWNKgrosuom55U8NxzctVFda"
-hello_anchor = "5U3WeRHLRDq57Kdq2twZQrkgz4fMGvAqbZQjKWPAGiAU"
+game = "CHZxZuE6fdPQAywgCRVp1wSJZbrqBczvo7VjFMCkkL4y"
+hello_anchor = "2RgBM5i2YBy6kSZB6vtwbPdk7QzRCyim6QqsFdc7cRsc"
+journal = "BNrXDLHnCC5aPZNoZvXi2JkbtejhvaCLQdJ4ddSNLBpw"
 
 [registry]
 url = "https://api.apr.dev"

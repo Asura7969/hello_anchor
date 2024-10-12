@@ -56,6 +56,7 @@ pub mod cash_app {
         Ok(())
     }
 
+    /// 转移资金
     pub fn transfer_funds(
         ctx: Context<TransferFunds>,
         _recipient: Pubkey,

@@ -5,6 +5,7 @@
       <sourceFolder url="file://$MODULE_DIR$/programs/game/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/programs/hello_anchor/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/programs/cash-app/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/programs/journal/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
