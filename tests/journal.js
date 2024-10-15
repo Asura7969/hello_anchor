@@ -40,13 +40,13 @@ describe("journal", () => {
     const program = anchor.workspace.Journal;
     const user = provider.wallet.publicKey;
     const seeds = Buffer.from("title");
-    const [pubkey] = anchor.web3.PublicKey.findProgramAddressSync([seeds, user.toBuffer()], program.programId);
+    const [myStorage, _bump] = anchor.web3.PublicKey.findProgramAddressSync([seeds, user.toBuffer()], program.programId);
     it("create", () => __awaiter(void 0, void 0, void 0, function* () {
         try {
             const initializeTx = yield program.methods
                 .createJournalEntry("title", "测试数据")
                 .accounts({
-                journalEntry: pubkey,
+                journalEntry: myStorage,
                 owner: user,
                 systemProgram: anchor.web3.SystemProgram.programId,
             })
@@ -61,7 +61,7 @@ describe("journal", () => {
         const guessingTx = yield program.methods
             .updateJournalEntry("title", "新-测试数据")
             .accounts({
-            journalEntry: pubkey,
+            journalEntry: myStorage,
             payer: user,
             systemProgram: anchor.web3.SystemProgram.programId,
         })
@@ -73,12 +73,18 @@ describe("journal", () => {
         const guessingTx = yield program.methods
             .deleteJournalEntry("title")
             .accounts({
-            journalEntry: pubkey,
+            journalEntry: myStorage,
             payer: user,
             systemProgram: anchor.web3.SystemProgram.programId,
         })
             .rpc();
         // @ts-ignore
         console.log("Congratulation you're right!");
+    }));
+    it("query", () => __awaiter(void 0, void 0, void 0, function* () {
+        console.log("the storage account address is", myStorage.toBase58());
+        let entry = yield program.account.journalEntryState.fetch(myStorage);
+        console.log("title is:", entry.title.toString());
+        console.log("message is:", entry.title.toString());
     }));
 });
