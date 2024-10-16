@@ -6,6 +6,8 @@
       <sourceFolder url="file://$MODULE_DIR$/programs/hello_anchor/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/programs/cash-app/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/programs/journal/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/programs/cpi_sol_splitter/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/programs/points/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
