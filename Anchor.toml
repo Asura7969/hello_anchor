@@ -13,6 +13,7 @@ journal = "BNrXDLHnCC5aPZNoZvXi2JkbtejhvaCLQdJ4ddSNLBpw"
 [programs.localnet]
 cash-app = "Ekis1DgPsw7wAkWF9x28ziUeZp6vjhEQ9J4ikdMNJEWZ"
 cpi_sol_splitter = "BF6hw3z49np3tQyQpnWDgb1yeKQY13Kz4YHB3BUcktHF"
+energy_game = "7Nbobyn51AfuMFvzuc4mrRJWVzqWyyqoNnRhoB12xAW5"
 game = "CHZxZuE6fdPQAywgCRVp1wSJZbrqBczvo7VjFMCkkL4y"
 hello_anchor = "2RgBM5i2YBy6kSZB6vtwbPdk7QzRCyim6QqsFdc7cRsc"
 journal = "BNrXDLHnCC5aPZNoZvXi2JkbtejhvaCLQdJ4ddSNLBpw"

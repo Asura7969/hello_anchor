@@ -62,7 +62,7 @@ describe("journal", () => {
         console.log("Congratulation you're right!");
     });
 
-    it("query", async() => {
+    it("query", async () => {
         console.log("the storage account address is", myStorage.toBase58());
         let entry = await program.account.journalEntryState.fetch(myStorage);
         console.log("title is:", entry.title.toString());
